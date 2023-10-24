@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-spacing: 2px;
+  text-align: center;
+  width:"100px";
+}
+
+</style>
+<head>
+    <link rel="javascript" href="lab4.js">
+</head>
+<html>
+<table id="table">
+    <tr>
+        <td style="background-color: blue; ">Math</td>
+        <td style="background-color: blue; ">English</td>
+        <td style="background-color: blue; ">Programming</td>
+    </tr>
+    <tr>
+        <td>90</td>
+        <td>60</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>80</td>
+        <td>86</td>
+        <td>98</td>
+    </tr>
+</table>
+<p>change table width</p>
+<button id="table" onclick="changeTableWidth()">200px</button>
+<button id="table" onclick="changeTableWidth1()">500px</button>
+<p>change table border and space width</p>
+<button id="table" onclick="changeborder()">1px</button>
+<button id="cborder" onclick="changeborder1()">10px</button>
+<button id="cborder" onclick="changeborder2()">20px</button>
+<p>change table color</p>
+<button style=background-color:cyan;padding:10px 10px onclick="changecolor()"></button>
+<button style=background-color:green;padding:10px 10px onclick="changecolor1()"></button>
+<button style=background-color:purple;padding:10px 10px onclick="changecolor2()"></button>
+<button style=background-color:orange;padding:10px 10px onclick="changecolor3()"></button>
+<br>
+<p></p>
+<button id="table" onclick="reset()">reset</button>
+<script>
+function changecolor(){
+    var btn=document.getElementById("table");
+    btn.style.background="cyan";
+}
+function changecolor1(){
+    var btn=document.getElementById("table");
+    btn.style.background="green";
+}
+function changecolor2(){
+    var btn=document.getElementById("table");
+    btn.style.background="purple";
+}
+function changecolor3(){
+    var btn=document.getElementById("table");
+    btn.style.background="orange";
+}
+function changeborder(){
+    var btn=document.getElementById("table");
+    btn.style.borderSpacing="1px";
+}
+function changeborder1(){
+    var btn=document.getElementById("table");
+    btn.style.borderSpacing="10px";
+}
+function changeborder2(){
+    var btn=document.getElementById("table");
+    btn.style.borderSpacing="20px";
+}
+function changeTableWidth(){
+    var btn=document.getElementById("table")
+    btn.style.width="200px";
+}
+function changeTableWidth1(){
+    var btn=document.getElementById("table")
+    btn.style.width="500px";
+}
+function reset(){
+    var btn=document.getElementById("table")
+    btn.style.width="100px";
+    btn.style.borderSpacing="2px";
+    btn.style.backgroundColor="white";
+}
+</script>
+</html>
